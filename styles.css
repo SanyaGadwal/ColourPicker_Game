@@ -16,6 +16,7 @@ font-family: "arial";
 }
 button{
     border: none;
+    background-color: white;
     text-transform: uppercase;
     height: 100%;
     font-weight: 700;
@@ -28,7 +29,12 @@ button:hover{
     color: white;
     background-color: steelblue;
 }
+.container{
+    margin: 200px auto;
+    max-width: 1000px;
+}
 .square{
+    
     background-color: red;
     width: 12%;
     margin: 1.66%;
@@ -37,10 +43,7 @@ button:hover{
     border-radius: 30%;
     transition:background 0.7s ;
 }
-.container{
-    margin: 20px auto;
-    max-width: 600px;
-}
+
 #stripe{
     text-align: center;
     background-color: white;
