@@ -24,4 +24,31 @@ function init()
     picked = arr[randomPickedColorIndex()];
     //updating target RGB display
     targetColor.textContent = picked;
+
+
+for(var i=0;i<squares.length;i++)
+{
+    //setting squares's color one by one to palette color
+    squares[i].style.backgroundColor=arr[i];
+    //adding eventListener to all squares
+    squares[i].addEventListener("click",function(){
+        if(picked===this.style.backgroundColor)
+    {
+        message.textContent-"Correct";
+        message.style.color="green";
+        //when correct,set everything to the target color and set newcolor to playagain
+        changeColor(this.style.backgroungColor);
+        reset.textContent="Play Again?";
+    }
+    else
+
+    {
+        message.textContent="Try Again?";
+        message.style.color="red";
+        //to hide the wrong square, we will set it to background color
+        this.style.backgroundColor="#232323";
+    }
+});
 }
+}
+
