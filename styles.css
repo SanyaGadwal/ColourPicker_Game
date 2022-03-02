@@ -17,7 +17,7 @@ font-family: "arial";
 button{
     border: none;
     background-color: white;
-    text-transform: uppercase;
+    text-transform: uppercase; 
     height: 100%;
     font-weight: 700;
     color: steelblue;
@@ -30,18 +30,18 @@ button:hover{
     background-color: steelblue;
 }
 .container{
-    margin: 200px auto;
-    max-width: 1000px;
+    margin: 20px auto;
+    max-width: 600px;
 }
-.square{
+.Square{
     
     background-color: red;
     width: 12%;
-    margin: 1.66%;
+    margin: 2%;
     float:left;
     padding-bottom: 30%;
     border-radius: 30%;
-    transition:background 0.7s ;
+    transition:background 0.7s ; 
 }
 
 #stripe{
