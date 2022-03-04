@@ -45,9 +45,6 @@ for(var i=0;i<squares.length;i++)
         changeColor(this.style.backgroundColor);
         reset.textContent="Play Again?";
         console.log("correct colour");
-        
-
-        
         }
     else
     {
@@ -55,7 +52,6 @@ for(var i=0;i<squares.length;i++)
         message.style.color="red";
         //to hide the wrong square, we will set it to background color
         this.style.backgroundColor="#232323";
-        
     }
 });
 }
