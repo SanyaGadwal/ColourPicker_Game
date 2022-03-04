@@ -14,6 +14,9 @@ var message = document.getElementById("message");
 var head = document.querySelector("h1");
 //reset button
 var reset = document.getElementById("NewColor");
+var playbtn = document.querySelector("#playAgain");
+var easyBtn = document.querySelector("#easyBtn");
+var hardBtn = document.querySelector("#hardBtn");
 
 init();
 function init()
@@ -34,7 +37,7 @@ for(var i=0;i<squares.length;i++)
     squares[i].addEventListener("click",function(){
         console.log(this.style.backgroundColor+"="+picked);
 
-        if(this.style.backgroundColor===picked)
+        if(picked===this.style.backgroundColor)
     {
         message.textContent="Correct";
         message.style.color="green";
@@ -42,9 +45,10 @@ for(var i=0;i<squares.length;i++)
         changeColor(this.style.backgroundColor);
         reset.textContent="Play Again?";
         console.log("correct colour");
-        window.alert("correct colour")
         
-    }
+
+        
+        }
     else
     {
         message.textContent="Try Again?";
@@ -73,7 +77,7 @@ function rgbGenerator()
     var r=Math.floor(Math.random()*256);
     var g=Math.floor(Math.random()*256);
     var b=Math.floor(Math.random()*256);
-    return "rgb("+r+","+g+","+b+")";
+    return "rgb("+r+", "+g+", "+b+")";
 }
 function changeColor(color)
 {
@@ -91,3 +95,15 @@ function resetIn(){
     for(var i=0;i<squares.length;i++)
     squares[i].style.backgroundColor=arr[i];
 }
+
+
+
+  
+
+
+
+
+
+
+
+

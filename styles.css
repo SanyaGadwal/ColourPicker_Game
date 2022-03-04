@@ -58,3 +58,6 @@ padding: auto 0;
     font-size: inherit;
     transition: all 0.3s;
 }
+#timer{
+    color: red;
+}
