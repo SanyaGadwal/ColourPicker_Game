@@ -1,2 +1,2 @@
 # ColourPicker_Game
-I developed a Color Picker Game using HTML, CSS AND JS.
+I developed a Color Guessing Game using HTML, CSS AND JS.
